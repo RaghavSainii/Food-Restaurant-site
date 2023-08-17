@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(1,1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 10px;
+}
+
+.bar_icon{
+    transition: 0.3s ease-in-out;
+
+    font-size: 34px;
+}
+.bar_icon:hover{
+transition: 0.3s ease-in-out;
+font-size: 40px;
+cursor: pointer;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.herosection{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    align-self: flex-start;
+}
+.herotext{
+    display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.herotext h1{
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight:400 ;
+}
+button{
+    padding: 10px 15px;
+    border:none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.explore_btn{
+    background-color:#FFC066;
+    /* width: 174px;
+    height: 57px; */
+    color: white;
+align-self: self-start;
+    font-size: 20px;
+}
+.features{
+    display:flex;
+    margin-top: 100px;
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.feature{
+    display: flex;
+    gap: 20px;
+   padding: 10px;
+}
+
+.feature:hover{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    transition: 0.2s ease-in-out;
+}
+.divider{
+    border: 1px solid grey;
+    margin: 20px 0;
+}
+.menu{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    gap: 20px;
+}
+.menu .tag{
+align-self: center;
+}
+.gridimg{
+    border-radius: 10px;
+transition: 0.3s ease-in-out;
+
+}
+
+.gridimg:hover{
+transform: scale(1.05);
+transition: 0.3s ease-in-out;
+}
+
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "i1 i1 i2 i3"
+    "i1 i1 i2 i7"
+    "i4 i5 i6 i7";
+}
+
+.item1{
+    grid-area:i1;
+}
+.item2{
+    grid-area:i2;
+}
+.item3{
+    grid-area:i3;
+}
+.item4{
+    grid-area:i4;
+}
+.item5{
+    grid-area:i5;
+}
+.item6{
+    grid-area:i6;
+}
+.item7{
+    grid-area:i7;
+}
+footer{
+background-color: wheat ;
+}
+    
+.footer_container{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.link_list h3{
+color: grey;
+margin-bottom:10px ;
+}
+.link_list ul{
+    list-style: none;
+}
+.news_letter {
+   gap: 10px;
+}
+.link_list ul li{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.news_letter{
+    color: grey;
+}
+
+
+@media(max-width:786px){
+    .herosection{
+        flex-direction: column;
+
+    }
+
+    .heroimg{
+        display: flex;
+        justify-content: center;
+    }
+    .heroimg img{
+        width: 80%;
+    }
+    .herotext{
+     padding: 10px;
+        gap: 10px;
+        
+    }
+    .herotext h1{
+        font-size: 32px;
+        
+    }
+.feature{
+   display: flex;
+   align-items: center;
+   flex-direction: column; 
+}
+.grid{
+    padding: 10px;
+}
+.gridimg{
+    border-radius: 0px;
+}
+.footer_container{
+   flex-direction: column;
+}
+}
+/* .heroimg{
+    margin: 50px;
+    width: 512px;
+    height: 514px;
+}
+
+.herotext{
+    text-align: right;
+    font-size: 72px;px
+    font-weight: 500;
+    border: solid;
+    border-color: white;
+}
+.herosection{
+    max-width: 1440px;
+    display: grid;
+    min-width:1440px;
+ 
+ 
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1.5fr));
+}
+.discounthead{
+    border: solid;
+    background-color: green;
+    text-align: ;
+    padding: 20px;
+    border-color: white;
+    font-size: 50px;
+color: white;
+font-weight: lighter;
+letter-spacing: 3px;
+} */
